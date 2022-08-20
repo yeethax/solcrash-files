@@ -20318,7 +20318,7 @@ window.solanaWeb3 = (function (exports) {
     https: {
       devnet: 'https://api.devnet.solana.com',
       testnet: 'https://api.testnet.solana.com',
-      mainnet-beta: 'https://api.mainnet-beta.solana.com',
+      "mainnet-beta": 'https://api.mainnet-beta.solana.com',
     },
   };
   function clusterApiUrl(cluster, tls) {
