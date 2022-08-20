@@ -20324,7 +20324,7 @@ window.solanaWeb3 = (function (exports) {
   function clusterApiUrl(cluster, tls) {
     const key = tls === false ? 'http' : 'https';
     if (!cluster) {
-      return endpoint[key]['mainnet-beta'];
+      return endpoint[key]['devnet'];
     }
     const url = endpoint[key][cluster];
     if (!url) {
