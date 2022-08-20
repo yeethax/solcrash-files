@@ -20313,18 +20313,18 @@ window.solanaWeb3 = (function (exports) {
     http: {
       devnet: 'http://api.devnet.solana.com',
       testnet: 'http://api.testnet.solana.com',
-      'mainnet-beta': 'http://api.mainnet-beta.solana.com',
+      mainnet-beta: 'http://api.mainnet-beta.solana.com',
     },
     https: {
       devnet: 'https://api.devnet.solana.com',
       testnet: 'https://api.testnet.solana.com',
-      'mainnet-beta': 'https://api.mainnet-beta.solana.com',
+      mainnet-beta: 'https://api.mainnet-beta.solana.com',
     },
   };
   function clusterApiUrl(cluster, tls) {
     const key = tls === false ? 'http' : 'https';
     if (!cluster) {
-      return endpoint[key]['devnet'];
+      return endpoint[key]['mainnet-beta'];
     }
     const url = endpoint[key][cluster];
     if (!url) {
